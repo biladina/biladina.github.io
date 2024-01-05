@@ -37,7 +37,10 @@ languages:
           weight: 10
         - name: Search
           url: search/
-          weight: 10
+          weight: 15
+        - name: About
+          url: about
+          weight: 20
 
 outputs:
   home:
@@ -65,7 +68,7 @@ params:
   ShowPageNums: true
   ShowToc: true
   comments: true
-  hideFooter: true
+  hideFooter: false
 
   profileMode:
     enabled: true
@@ -79,17 +82,6 @@ params:
         url: posts
       - name: Portfolio
         url: portfolio
-
-  homeInfoParams:
-    Title: "PaperMod's Demo"
-    Content: >
-      👋 Welcome to demo page of Hugo's theme PaperMod!
-
-      - **PaperMod**  is designed to be clean and simple but fast and responsive theme with useful feature-set that enhances UX.
-
-      - Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media .
-
-      - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper/tree/4330c8b12aa48bfdecbcad6ad66145f679a430b3).
 
   socialIcons:
     - name: github
